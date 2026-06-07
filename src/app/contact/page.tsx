@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, FormEvent } from 'react'
+import { FormEvent, useState } from 'react'
 
 export default function ContactPage() {
   const [form, setForm] = useState({
@@ -82,8 +82,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-forest mb-1">Phone</h3>
                     <p className="text-gray-600 text-sm">
-                      <a href="tel:9446718120" className="hover:text-forest transition-colors">9446718120</a>
-                      &nbsp;|&nbsp;
+                      
                       <a href="tel:9746383753" className="hover:text-forest transition-colors">9746383753</a>
                     </p>
                   </div>
@@ -109,7 +108,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-forest mb-1">Hospital — Medhika Ayurveda</h3>
                     <p className="text-gray-600 text-sm">
-                      Attappadi Region, Lakkidi, Palakkad District, Kerala
+                      Lakkidi, Palakkad District, Kerala
                     </p>
                   </div>
                 </div>
@@ -274,10 +273,9 @@ export default function ContactPage() {
       {/* Quick contact */}
       <section className="py-14 bg-primary-50">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="grid sm:grid-cols-3 gap-6 text-center">
+          <div className="grid sm:grid-cols-2 gap-6 text-center max-w-xl mx-auto">
             {[
-              { icon: '📞', title: 'Call Us', info: '9446718120', sub: 'Mon–Sat, 9am–6pm', href: 'tel:9446718120' },
-              { icon: '📱', title: 'Alternate', info: '9746383753', sub: 'For enquiries', href: 'tel:9746383753' },
+              { icon: '📱', title: 'Phone Us', info: '9746383753', sub: 'For enquiries', href: 'tel:9746383753' },
               { icon: '📍', title: 'Visit Us', info: 'Puthuppariyaram', sub: 'Palakkad – 678731', href: '#' },
             ].map((c) => (
               <a key={c.title} href={c.href} className="card p-6 block hover:-translate-y-1 transition-transform">

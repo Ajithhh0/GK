@@ -124,7 +124,7 @@ export default function CsrPage() {
           </p>
           <div className="bg-white rounded-2xl shadow-md p-6 inline-block">
             <Image
-              src="/images/qr%20code.jpeg"
+              src="/images/qr-code.jpeg"
               alt="Donate via QR Code — Guru Kripa Charitable Trust"
               width={240}
               height={240}

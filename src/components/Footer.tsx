@@ -27,7 +27,7 @@ export default function Footer() {
               </p>
               <p className="flex items-center gap-2">
                 <span className="shrink-0">📞</span>
-                <span>9446718120 | 9746383753</span>
+                <span> 9746383753</span>
               </p>
             </div>
           </div>

@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 
 export const metadata: Metadata = { title: 'Our Programs' }
 
@@ -74,7 +73,7 @@ export default function ProjectsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 md:mb-14">
             <span className="text-amber-500 font-semibold text-sm uppercase tracking-wider">Active Programs</span>
-            <h2 className="section-heading mt-2">What We Do Today</h2>
+            <h2 className="section-heading mt-2">What We Do </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {currentPrograms.map((p) => (
@@ -84,7 +83,6 @@ export default function ProjectsPage() {
                 </div>
                 <h3 className="font-bold text-forest text-base mb-2">{p.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{p.desc}</p>
-                <ImagePlaceholder label={p.title} aspectRatio="video" className="mt-4" />
               </div>
             ))}
           </div>
@@ -145,7 +143,13 @@ export default function ProjectsPage() {
             </div>
 
             <div className="space-y-6">
-              <ImagePlaceholder label="Medhika Ayurveda Hospital" aspectRatio="video" icon="🏥" />
+              <div className="relative w-full aspect-video rounded-2xl overflow-hidden">
+                <img
+                  src="/images/medhika.png"
+                  alt="Medhika Ayurveda Hospital"
+                  className="w-full h-full object-cover object-bottom"
+                />
+              </div>
               <div className="bg-white rounded-2xl p-6 shadow-sm">
                 <h3 className="font-bold text-forest text-lg mb-4">Major Components</h3>
                 <ul className="space-y-2 text-sm text-gray-600">

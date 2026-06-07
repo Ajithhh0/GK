@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -18,7 +17,7 @@ const highlights = [
   {
     icon: '🏥',
     title: 'Ayurveda & Healthcare',
-    desc: 'Running Medhika outpatient services for tribal women in Attappadi with free consultations and medicines.',
+    desc: 'Running Medhika outpatient services for tribal women in Lakkidi with free consultations and medicines.',
   },
   {
     icon: '🌿',
@@ -171,14 +170,34 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="space-y-4">
-              <ImagePlaceholder
-                label="Medhika Ayurveda Hospital — Attappadi"
-                aspectRatio="video"
-                icon="🏥"
-              />
+              <div className="relative w-full aspect-video rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/1.jpeg"
+                  alt="Medhika Ayurveda Hospital — Attappadi"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
               <div className="grid grid-cols-2 gap-4">
-                <ImagePlaceholder label="Medical Camp" aspectRatio="video" icon="👩‍⚕️" />
-                <ImagePlaceholder label="Tribal Women" aspectRatio="video" icon="👶" />
+                <div className="relative w-full aspect-video rounded-2xl overflow-hidden">
+                  <Image
+                    src="/images/2.jpeg"
+                    alt="Medical Camp"
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
+                <div className="relative w-full aspect-video rounded-2xl overflow-hidden">
+                  <Image
+                    src="/images/3.jpeg"
+                    alt="Community Service"
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -203,12 +222,10 @@ export default function HomePage() {
               { label: 'Palliative Care', icon: '💊' },
               { label: 'Ambulance Service', icon: '🚑' },
             ].map((item) => (
-              <ImagePlaceholder
-                key={item.label}
-                label={item.label}
-                aspectRatio="square"
-                icon={item.icon}
-              />
+              <div key={item.label} className="bg-primary-50 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 text-center hover:shadow-md transition-shadow">
+                <span className="text-4xl">{item.icon}</span>
+                <p className="text-forest font-semibold text-sm">{item.label}</p>
+              </div>
             ))}
           </div>
           <div className="text-center mt-8">

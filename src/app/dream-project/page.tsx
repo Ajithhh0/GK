@@ -577,8 +577,6 @@ export default function DreamProjectPage() {
                 <p className="text-forest font-semibold text-sm mb-1">Guru Kripa Charitable Trust</p>
                 <p className="text-gray-600 text-xs">15/95A, Arathi House, Balu Nagar, Puthuppariyaram, Palakkad – 678731, Kerala</p>
                 <p className="text-gray-600 text-xs mt-2">
-                  <a href="tel:9446718120" className="hover:text-forest">9446718120</a>
-                  {' '}|{' '}
                   <a href="tel:9746383753" className="hover:text-forest">9746383753</a>
                 </p>
               </div>

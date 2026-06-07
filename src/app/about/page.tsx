@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 
 export const metadata: Metadata = { title: 'About Us' }
 
@@ -82,16 +81,22 @@ export default function AboutPage() {
                   src="/images/medhika.png"
                   alt="Medhika — Ayurvedic outpatient services by Guru Kripa Charitable Trust"
                   fill
-                  className="object-cover"
+                  className="object-cover object-bottom"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-forest/70 to-transparent px-5 py-4">
                   <p className="text-white font-semibold text-sm">Medhika Outpatient Services</p>
-                  <p className="text-green-200 text-xs">Attappadi Tribal Region, Palakkad</p>
+                  <p className="text-green-200 text-xs">Lakkidi Ottapalam, Palakkad</p>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <ImagePlaceholder label="Trust Office" aspectRatio="video" icon="🏛️" />
-                <ImagePlaceholder label="Community Work" aspectRatio="video" icon="🌿" />
+                <div className="bg-primary-50 rounded-2xl flex flex-col items-center justify-center gap-2 py-8 text-center">
+                  <span className="text-4xl">🏛️</span>
+                  <p className="text-forest font-semibold text-sm">Trust Office</p>
+                </div>
+                <div className="bg-primary-50 rounded-2xl flex flex-col items-center justify-center gap-2 py-8 text-center">
+                  <span className="text-4xl">🌿</span>
+                  <p className="text-forest font-semibold text-sm">Community Work</p>
+                </div>
               </div>
             </div>
           </div>
@@ -154,7 +159,6 @@ export default function AboutPage() {
                 <div className="w-20 h-20 mx-auto mb-4 bg-primary-50 rounded-full flex items-center justify-center text-4xl">
                   {m.icon}
                 </div>
-                <ImagePlaceholder label={`Photo — ${m.name}`} aspectRatio="square" className="mb-4" />
                 <h4 className="font-bold text-forest">{m.name}</h4>
                 <p className="text-gray-500 text-sm mt-1">{m.role}</p>
               </div>
