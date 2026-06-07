@@ -21,9 +21,14 @@ export default function Footer() {
               of tribal and backward communities across Palakkad, Kerala.
             </p>
             <div className="mt-5 flex flex-col gap-2 text-sm text-green-200">
-              <p>📍 15/95A, Arathi House, Balu Nagar,</p>
-              <p className="pl-6">Puthuppariyaram (PO), Palakkad – 678731</p>
-              <p>📞 9446718120 | 9746383753</p>
+              <p className="flex items-start gap-2">
+                <span className="shrink-0">📍</span>
+                <span>15/95A, Arathi House, Balu Nagar, Puthuppariyaram (PO), Palakkad – 678731</span>
+              </p>
+              <p className="flex items-center gap-2">
+                <span className="shrink-0">📞</span>
+                <span>9446718120 | 9746383753</span>
+              </p>
             </div>
           </div>
 

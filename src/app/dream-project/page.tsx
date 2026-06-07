@@ -319,7 +319,7 @@ export default function DreamProjectPage() {
               11,281 sq.ft. across two floors.
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {facilities.map(f => (
               <div key={f.label} className="bg-white rounded-xl p-4 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow">
                 <span className="text-3xl shrink-0">{f.icon}</span>
@@ -343,7 +343,7 @@ export default function DreamProjectPage() {
           </div>
 
           {/* Pricing cards */}
-          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
+          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12 px-2 sm:px-0">
             <div className="relative bg-gradient-to-br from-forest to-forest-light rounded-2xl p-7 text-white shadow-xl overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-white/5 -translate-y-8 translate-x-8" />
               <p className="text-green-200 text-sm font-semibold uppercase tracking-wider mb-2">1 BHK Unit</p>
@@ -425,7 +425,7 @@ export default function DreamProjectPage() {
                 providing everything a resident could need within a secure, accessible, and
                 eco-friendly environment.
               </p>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {layoutFeatures.map(f => (
                   <div key={f.no} className="flex items-center gap-2.5 bg-gray-50 rounded-lg px-3 py-2.5">
                     <span className="w-6 h-6 bg-forest text-white text-xs font-bold rounded-full flex items-center justify-center shrink-0">
