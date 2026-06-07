@@ -8,8 +8,8 @@ const csrNeeds = [
   {
     icon: '🚑',
     title: 'New Ambulance',
-    amount: '₹20,00,000',
-    amountShort: '₹20 Lakhs',
+    amount: '₹30,00,000',
+    amountShort: '₹30 Lakhs',
     desc: 'A dedicated ambulance will ensure timely transportation of patients from remote tribal villages to the In-Patient department for emergency and routine medical care.',
     impact: 'Connects remote villages to healthcare',
     color: 'border-blue-300 bg-blue-50',
@@ -19,8 +19,8 @@ const csrNeeds = [
   {
     icon: '💊',
     title: 'Medicine Procurement',
-    amount: '₹5,00,000',
-    amountShort: '₹5 Lakhs',
+    // amount: '₹5,00,000',
+    // amountShort: '₹5 Lakhs',
     desc: 'Procurement of essential Ayurvedic and allopathic medicines for the In-Patient facility and outreach medical camps serving tribal communities.',
     impact: 'Medicines for tribal mothers',
     color: 'border-green-300 bg-green-50',
@@ -30,8 +30,8 @@ const csrNeeds = [
   {
     icon: '🏥',
     title: 'Infrastructure Development',
-    amount: '₹1,25,00,000',
-    amountShort: '₹1.25 Crore',
+    amount: '₹1,00,00,000',
+    amountShort: '₹1 Crore',
     desc: 'Construction and equipping of the Ayurvedic In-Patient Maternal & Women\'s Health Facility at Lakkidi, Palakkad for tribal communities of Attappadi.',
     impact: 'Dedicated tribal maternity facility',
     color: 'border-amber-300 bg-amber-50',
@@ -103,7 +103,8 @@ export default function CsrPage() {
                 <span className={`self-start text-xs font-semibold px-3 py-1 rounded-full mb-3 ${n.tagColor}`}>
                   {n.impact}
                 </span>
-                <h3 className="font-bold text-forest text-xl mb-2">{n.title}</h3>
+                <h3 className="font-bold text-forest text-xl mb-1">{n.title}</h3>
+                <p className="font-bold text-2xl text-forest mb-3">{n.amountShort}</p>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-1">{n.desc}</p>
                 <Link href="/contact" className={`text-white text-sm font-semibold px-5 py-3 rounded-lg text-center transition-colors ${n.btnColor}`}>
                   Enquire to Contribute

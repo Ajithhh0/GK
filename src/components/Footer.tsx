@@ -27,8 +27,19 @@ export default function Footer() {
               </p>
               <p className="flex items-center gap-2">
                 <span className="shrink-0">📞</span>
-                <span> 9746383753</span>
+                <span>9746383753</span>
               </p>
+              <p className="flex items-center gap-2">
+                <span className="shrink-0">✉️</span>
+                <span>gurukripapkd2025@gmail.com</span>
+              </p>
+            </div>
+            <div className="mt-5 grid grid-cols-2 gap-x-6 gap-y-1.5 text-xs text-green-300">
+              <p><span className="text-green-400">Niti Aayog ID</span><br />KL/2025/0648917</p>
+              <p><span className="text-green-400">CSR Reg.</span><br />CSR00102240</p>
+              <p><span className="text-green-400">PAN</span><br />AAETG9671K</p>
+              <p><span className="text-green-400">UDYAM</span><br />KL-10-00091696</p>
+              <p className="col-span-2"><span className="text-green-400">Reg. No.</span> AAETG9671K25KCO.280G(5) &nbsp;·&nbsp; 12AB(1)(b)</p>
             </div>
           </div>
 

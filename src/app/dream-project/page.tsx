@@ -137,7 +137,7 @@ export default function DreamProjectPage() {
         </div>
       </section>
 
-      {/* ── Stats Banner ── */}
+      {/* ── Stats Banner ──
       <section className="bg-forest py-8">
         <div className="max-w-5xl mx-auto px-4">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
@@ -154,7 +154,7 @@ export default function DreamProjectPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── Introduction ── */}
       <section id="overview" className="py-16 md:py-24 bg-white">
@@ -334,19 +334,31 @@ export default function DreamProjectPage() {
       <section className="py-14 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 md:mb-14">
-            <span className="text-amber-500 font-semibold text-sm uppercase tracking-wider">Residential Units</span>
+            <span className="text-amber-500 font-semibold text-sm uppercase tracking-wider">Residential Villas</span>
             <h2 className="section-heading mt-2">Senior Citizen Villas</h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
-              Purpose-built independent villas designed for dignity, accessibility, and peaceful
-              retirement living within the Guru Kripa Old Age Home campus.
+              Independent villas on the 2-acre campus — separate from the main Old Age Home building —
+              designed for dignity, accessibility, and peaceful retirement living. The campus also
+              includes a dedicated hall for orphan children as part of this integrated community.
             </p>
+          </div>
+
+          {/* Land cost banner */}
+          <div className="max-w-2xl mx-auto mb-8 px-2 sm:px-0">
+            <div className="bg-amber-50 border border-amber-200 rounded-2xl px-6 py-4 flex items-center justify-between gap-4 flex-wrap">
+              <div>
+                <p className="text-amber-700 font-semibold text-sm">2-Acre Land for Villa Campus</p>
+                <p className="text-gray-500 text-xs mt-0.5">To be purchased — supports villas, orphan hall & green spaces</p>
+              </div>
+              <p className="font-display text-2xl font-bold text-amber-600">₹1 Crore</p>
+            </div>
           </div>
 
           {/* Pricing cards */}
           <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12 px-2 sm:px-0">
             <div className="relative bg-gradient-to-br from-forest to-forest-light rounded-2xl p-7 text-white shadow-xl overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-white/5 -translate-y-8 translate-x-8" />
-              <p className="text-green-200 text-sm font-semibold uppercase tracking-wider mb-2">1 BHK Unit</p>
+              <p className="text-green-200 text-sm font-semibold uppercase tracking-wider mb-2">1 BHK Villa Unit</p>
               <p className="font-display text-4xl font-bold text-amber-300 mb-1">₹15 Lakhs</p>
               <p className="text-green-200 text-xs mb-5">All-inclusive pricing</p>
               <ul className="space-y-1.5 text-sm text-green-100">
@@ -363,7 +375,7 @@ export default function DreamProjectPage() {
             <div className="relative bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl p-7 text-white shadow-xl overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-white/10 -translate-y-8 translate-x-8" />
               <span className="absolute top-4 right-4 bg-white/20 text-white text-xs font-bold px-2.5 py-1 rounded-full">Popular</span>
-              <p className="text-amber-100 text-sm font-semibold uppercase tracking-wider mb-2">2 BHK Unit</p>
+              <p className="text-amber-100 text-sm font-semibold uppercase tracking-wider mb-2">2 BHK Villa Unit</p>
               <p className="font-display text-4xl font-bold text-white mb-1">₹25 Lakhs</p>
               <p className="text-amber-100 text-xs mb-5">All-inclusive pricing</p>
               <ul className="space-y-1.5 text-sm text-amber-100">
@@ -437,15 +449,15 @@ export default function DreamProjectPage() {
               </div>
             </div>
             <div className="bg-gradient-to-br from-forest to-green-800 rounded-2xl p-6 text-white">
-              <h3 className="font-bold text-xl mb-6 text-amber-300">Residential Space Details</h3>
+              <h3 className="font-bold text-xl mb-1 text-amber-300">Old Age Home Building Details</h3>
+              <p className="text-green-300 text-xs mb-5">2-floor main building — separate from the villa units</p>
               <div className="space-y-4">
                 {[
                   { label: 'Total Built-up Area', value: '11,281 sq.ft.' },
                   { label: 'Ground Floor', value: '6,072 sq.ft.' },
                   { label: 'First Floor', value: '5,209 sq.ft.' },
                   { label: 'Resident Capacity', value: '30–40 Senior Citizens' },
-                  { label: 'Space per Resident', value: '75–100 sq.ft.' },
-                  { label: 'Land Requirement', value: '10–15 Acres' },
+                  { label: 'Villa Campus Land', value: '2 Acres — ₹1 Crore' },
                 ].map(d => (
                   <div key={d.label} className="flex justify-between items-center border-b border-white/10 pb-3">
                     <span className="text-green-200 text-sm">{d.label}</span>
@@ -468,7 +480,7 @@ export default function DreamProjectPage() {
             <span className="text-amber-500 font-semibold text-sm uppercase tracking-wider">Sustainability Model</span>
             <h2 className="section-heading mt-2">Land & Agricultural Revenue</h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
-              The 10–15 acre model ensures the Old Age Home remains financially self-sufficient —
+              The 2 acre model ensures the Old Age Home remains financially self-sufficient —
               agriculture and plantation income covering all operational expenses.
             </p>
           </div>
